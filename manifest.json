@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "info Web",
+  "version": "1.0.0",
+  "permissions": [
+    "http://localhost:5500/",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js","python.js"]
+    }
+  ],
+  "description": "Fake Offers Detection",
+  "action": {
+    "default_icon": "assets/icon2.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "assets/icon2.png",
+    "48": "assets/icon2.png",
+    "128": "assets/icon2.png"
+  }
+}

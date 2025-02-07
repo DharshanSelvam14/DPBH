@@ -1,0 +1,77 @@
+<!-- Extension initialized with https://github.com/virejdasani/Chrome-Extension-Boilerplate -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="assets/icon.png" />
+  <link rel="stylesheet" href="style.css">
+
+  <title>Info Web</title>
+</head>
+
+<body>
+
+  <h1>Info Web</h1>
+  <img src="./assets/bg.png" alt="" height="250px" id="gen">
+  <form action="result.html" method="post" class="con">
+    <!-- <input type="text" name="url" id="url" placeholder="Paste Url"><br>
+    <input type="submit" value="Submit" id="submit"> -->
+    <p><strong>Note:</strong> It doesn't work for refurbished products...</p>
+    <div class="spinner" id="spinner" style="display: none;"></div>
+    <table id="infoTable" style="display: none;">
+      <thead>
+        <tr>
+            <th>Parameters</th>
+            <th>Result</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Title</th>
+            <td id="title"></td>
+        </tr>
+        <tr>
+          <th>Price</th>
+          <td id="price"></td>
+      </tr>
+      <tr>
+        <th>MRP</th>
+        <td id="mrp"></td>7tr
+    </tr>
+    <tr>
+      <th>Launch Price</th>
+      <td id="lp"></td>
+    </tr>
+    <tr>
+      <th>Discount</th>
+      <td id="dis"></td>
+    </tr>
+    <tr>
+      <th>Actual Discount</th>
+      <td id="adisc"></td>
+    </tr>
+    <tr>
+      <th>Ratings</th>
+      <td id="rate"></td>
+    </tr>
+    </tbody>
+    </table>
+    <img src="./assets/error.png" alt="" height="250px" id="error">
+    <h6 id="result"></h6>
+  </form>
+  <script src="popup.js"></script>
+</body>
+
+</html>
+
+<!-- <td id="price"></td>
+            <td id="mrp"></td>
+            <td id="lp"></td>
+            <td id="dis"></td>
+            <td id="adisc"></td>
+            <td id="rate"></td> -->
